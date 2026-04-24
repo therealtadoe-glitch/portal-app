@@ -1,4 +1,4 @@
-# new-game-project
+## Portal App
 
 # Supabase Godot Employee Portal Scaffold
 

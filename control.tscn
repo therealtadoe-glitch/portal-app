@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bq3huk364skd3"]
+
+[ext_resource type="Script" uid="uid://vw1uik1lapom" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=1842986726]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=280974504]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2025397436]
+layout_mode = 2
+text = "Show Info"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=2124398859]
+layout_mode = 2
+text = "Show Success"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=54521544]
+layout_mode = 2
+text = "Show Warning"
+
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1461230735]
+layout_mode = 2
+text = "Show Error"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_info_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_success_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_warning_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_error_button_pressed"]

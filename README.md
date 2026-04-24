@@ -1,6 +1,6 @@
-## Portal App
+# Portal App
 
-# Supabase Godot Employee Portal Scaffold
+## Supabase Godot Employee Portal Scaffold
 
 This scaffold gives the project a clean Godot-side backend layer for the employee portal schema.
 

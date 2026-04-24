@@ -11,13 +11,23 @@ config_version=5
 [application]
 
 config/name="New Game Project"
+run/main_scene="res://app/app_root.tscn"
+run/print_header=false
+run/enable_alt_space_menu=true
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/bg_color=Color(0.0565819, 0.06156204, 0.15105054, 1)
+boot_splash/stretch_mode=4
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=4000
+supabase/url="https://zsyrolbrwilytedjnzzo.supabase.co"
+supabase/publishable_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzeXJvbGJyd2lseXRlZGpuenpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwMTcxMjksImV4cCI6MjA5MjU5MzEyOX0.r4uKK9bOAl9KLx6gt-3OcvooyiHg4dITZZCNXkhaq8k"
 
 [autoload]
 
 ToastManager="*uid://b187rnh2ithxl"
-Supabase="*uid://cdwkav3u5tc4c"
+SupabaseClient="*uid://donnrw77qkwse"
+ProfileRepository="*uid://oliwsjyf48j3"
+OrganizationRepository="*uid://duy2ucqntif8r"
 
 [display]
 
@@ -27,10 +37,6 @@ window/size/transparent=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/per_pixel_transparency/allowed=true
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/supabase/plugin.cfg")
 
 [physics]
 

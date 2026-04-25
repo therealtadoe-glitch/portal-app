@@ -19,10 +19,10 @@ enum Type {
 }
 
 const ICONS: Dictionary = {
-	"info": preload("res://assets/icons/info.svg"),
-	"success": preload("res://assets/icons/success.svg"),
-	"warning": preload("res://assets/icons/warning.svg"),
-	"error": preload("res://assets/icons/error.svg")
+	"info": preload("res://assets/icons/toast_icons/info.svg"),
+	"success": preload("res://assets/icons/toast_icons/success.svg"),
+	"warning": preload("res://assets/icons/toast_icons/warning.svg"),
+	"error": preload("res://assets/icons/toast_icons/error.svg")
 }
 
 
@@ -265,7 +265,7 @@ var close_button_hover_background_color: Color = Color(1.0, 1.0, 1.0, 0.0):
 	set(value):
 		close_button_hover_background_color = value
 		queue_redraw()
-var close_button_icon: Texture2D = preload("res://assets/icons/Close Icon.svg"):
+var close_button_icon: Texture2D = preload("res://assets/icons/toast_icons/Close Icon.svg"):
 	set(value):
 		close_button_icon = value
 		queue_redraw()

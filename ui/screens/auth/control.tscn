@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://ikqdeujnv7bd"]
+
+[ext_resource type="Texture2D" uid="uid://qmwti6eic5sf" path="res://assets/icons/interface-time-clock-circle--clock-loading-measure-time-circle--Streamline-Core.svg" id="1_fwgtk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3peb"]
+content_margin_left = 8.0
+content_margin_top = 12.0
+content_margin_right = 8.0
+content_margin_bottom = 16.0
+
+[node name="Control" type="Control" unique_id=2125336155]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2014813935]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="AppBar" type="PanelContainer" parent="VBoxContainer" unique_id=1389823297]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/AppBar" unique_id=1961712724]
+layout_mode = 2
+
+[node name="BackBtn" type="TextureButton" parent="VBoxContainer/AppBar/HBoxContainer" unique_id=1988115709]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Spacer" type="Control" parent="VBoxContainer/AppBar/HBoxContainer" unique_id=1782697126]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="VBoxContainer/AppBar/HBoxContainer" unique_id=1051968981]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Dashboard"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="RefreshBtn" type="TextureButton" parent="VBoxContainer/AppBar/HBoxContainer" unique_id=775811823]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="LogoutBtn" type="TextureButton" parent="VBoxContainer/AppBar/HBoxContainer" unique_id=2025635709]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="PageHost" type="ScrollContainer" parent="VBoxContainer" unique_id=1812981187]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Navigation" type="PanelContainer" parent="VBoxContainer" unique_id=1462431765]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Navigation" unique_id=742604726]
+layout_mode = 2
+alignment = 1
+
+[node name="TimeTabBtn" type="Button" parent="VBoxContainer/Navigation/HBoxContainer" unique_id=778399907]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 28
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r3peb")
+text = "Time"
+icon = ExtResource("1_fwgtk")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="JobsTabBtn" type="Button" parent="VBoxContainer/Navigation/HBoxContainer" unique_id=702535346]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 28
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r3peb")
+text = "Jobs"
+icon = ExtResource("1_fwgtk")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="HomeTabBtn" type="Button" parent="VBoxContainer/Navigation/HBoxContainer" unique_id=1327160856]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 28
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r3peb")
+text = "Dash"
+icon = ExtResource("1_fwgtk")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="AlertsTabBtn" type="Button" parent="VBoxContainer/Navigation/HBoxContainer" unique_id=411341843]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 28
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r3peb")
+text = "Alert"
+icon = ExtResource("1_fwgtk")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="MoreTabBtn" type="Button" parent="VBoxContainer/Navigation/HBoxContainer" unique_id=1748716701]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/icon_max_width = 28
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r3peb")
+text = "More"
+icon = ExtResource("1_fwgtk")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0

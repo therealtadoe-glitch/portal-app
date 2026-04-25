@@ -25,7 +25,7 @@ supabase/publishable_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 [autoload]
 
 ToastManager="*uid://b187rnh2ithxl"
-SupabaseClient="*uid://donnrw77qkwse"
+SupabaseClient="*uid://3ikjcpbl4uh6"
 ProfileRepository="*uid://oliwsjyf48j3"
 OrganizationRepository="*uid://duy2ucqntif8r"
 
